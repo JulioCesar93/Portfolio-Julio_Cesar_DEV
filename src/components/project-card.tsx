@@ -32,8 +32,8 @@ interface Props {
   dates: string;
   tags: readonly string[];
   link?: string;
-  image?: string;
-  video?: string;
+  image?: string | null;
+  video?: string | null;
   links?: readonly {
     icon: React.ReactNode;
     type: string;

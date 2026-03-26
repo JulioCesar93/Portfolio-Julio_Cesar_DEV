@@ -24,6 +24,7 @@ export const DATA = {
     "Desenvolvedor Full Stack, com experiência em projetos corporativos, focado em aprendizado contínuo e colaboração em soluções tecnológicas.",
   summary:
     "Experiência em Infraestrutura, Suporte de TI e Desenvolvimento de Software, com foco em eficiência, resolução de problemas e colaboração em projetos corporativos.",
+  url: "https://JulioCesar93/Portfolio-Julio_Cesar_DEV",
   avatarUrl: "/me.png",
 
   skills: [

@@ -3,7 +3,8 @@ import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { DATA } from "@/data/resume";
 
 export default function ContactSection() {
-  const xUrl = DATA.contact?.social?.X?.url;
+  const socialUrl =
+    DATA.contact?.social?.LinkedIn?.url ?? DATA.contact?.social?.GitHub?.url;
 
   return (
     <div className="border rounded-xl p-10 relative">
@@ -30,9 +31,9 @@ export default function ContactSection() {
 
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
           Quer bater um papo? É só me mandar uma mensagem..{" "}
-          {xUrl ? (
+          {socialUrl ? (
             <Link
-              href={xUrl}
+              href={socialUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline underline-offset-4
@@ -40,10 +41,12 @@ export default function ContactSection() {
                          focus-visible:ring-ring focus-visible:ring-offset-2
                          rounded-sm"
             >
-              with a direct question on X (Twitter)
+              {DATA.contact?.social?.LinkedIn?.url
+                ? "Enviar mensagem pelo LinkedIn"
+                : "Ver perfil no GitHub"}
             </Link>
           ) : (
-            <span>Enviar pelo Linkedin.</span>
+            <span>Canal de contato não encontrado.</span>
           )}{" "}
           E responderei sempre que puder.
         </p>
