@@ -26,11 +26,11 @@ export default function ContactSection() {
 
       <div className="relative flex flex-col items-center gap-4 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          Entre em contato comigo!
+          Vamos conversar?
         </h2>
 
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          Quer bater um papo? É só me mandar uma mensagem..{" "}
+          Estou aberto a novas oportunidades, projetos e conexões profissionais.{" "}
           {socialUrl ? (
             <Link
               href={socialUrl}
@@ -42,13 +42,14 @@ export default function ContactSection() {
                          rounded-sm"
             >
               {DATA.contact?.social?.LinkedIn?.url
-                ? "Enviar mensagem pelo LinkedIn"
+                ? "Entre em contato comigo pelo LinkedIn."
                 : "Ver perfil no GitHub"}
             </Link>
           ) : (
             <span>Canal de contato não encontrado.</span>
           )}{" "}
-          E responderei sempre que puder.
+          <p>Será um prazer falar com você!</p>
+          
         </p>
       </div>
     </div>
