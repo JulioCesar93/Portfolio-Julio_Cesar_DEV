@@ -96,7 +96,7 @@ export const DATA = {
 
     {
       company: "Martins Atacadista",
-      href: "https://www.martinsatacado.com.br/",
+      href: null,
       badges: [],
       location: "https://www.google.com/maps/place/Uberlândia,+MG",
       title: "Analista HelpDesk II",
@@ -113,7 +113,7 @@ export const DATA = {
 
     {
       company: "Algar Tech",
-      href: "https://algartech.com",
+      href: null,
       badges: [],
       location: "https://www.google.com/maps/place/Uberlândia,+MG",
       title: "Analista de Suporte de TI",
@@ -131,7 +131,7 @@ export const DATA = {
   education: [
     {
       school: "Faculdade Unopar",
-      href: "https://www.unopar.com.br/",
+      href: null,
       degree:
         "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
       logoUrl:
@@ -141,7 +141,7 @@ export const DATA = {
     },
     {
       school: "Faculdade Unipac Uberlândia",
-      href: "https://unipacuberlandia.com.br/",
+      href: null,
       degree: "Curso Superior de Tecnologia em Logística",
       logoUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVCf2iOmrlE5tpyGlpoc_qWDVwH2y9Ce1zg&s",
@@ -154,7 +154,7 @@ export const DATA = {
     {
       title: "Controle Data Center - Ativos",
       href: "https://SUBIR **",
-      dates: "Março 2025 - Presente",
+      dates: "Iniciado em Março/2025",
       active: true,
       description:
         "O Data Center Control é um projeto desenvolvido com a linguagem Java e ecossistema Spring para gestão de ativos em Data Center, permitindo o controle organizado de clientes, equipamentos, localizações físicas (rack, fila, bastidor, nível) e tickets operacionais.",
@@ -172,7 +172,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Source",
+          type: "Back-End",
           href: "",
           icon: <Icons.github className="size-3" />,
         },
@@ -183,8 +183,8 @@ export const DATA = {
     // ------------------------------------ 02
     {
       title: "Service Desk - Tickets",
-      href: "https://SUBIR **",
-      dates: "Verificar DATA Inicio-Fim",
+      href: "https://github.com/JulioCesar93/Helpdesk_Corporativo-BackEnd",
+      dates: "Iniciado em Julho/2024",
       active: true,
       description:
         "Aplicação que tem como função de realizar o controle de Registros de Ocorrências de acordo com perfis de associados e analistas a partir de realização das respectivas ocorrências..",
@@ -197,12 +197,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://SUBIR **",
+          href: "https://github.com/JulioCesar93/Helpdesk_Corporativo-BackEnd",
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Source",
-          href: "",
+          type: "Back-End",
+          href: "https://github.com/JulioCesar93/Helpdesk_Corporativo-BackEnd",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -239,7 +239,7 @@ export const DATA = {
     {
       title: "Agendador de Tarefas",
       href: "https://SUBIR **",
-      dates: "Março 2025 - Presente",
+      dates: "Janeiro/2026 - Presente",
       active: true,
       description:
         "Aplicação que tem como função de realizar o agendamento de tarefas periódicas, permitindo a execução automática de processos programados no sistema.",
@@ -259,6 +259,34 @@ export const DATA = {
         },
       ],
       image: "/fonts/images/agenda-tarefas.png", 
+      video: null,
+    },
+    // ------------------------------------ 05
+
+    {
+      title: "Controle Financeiro - Moto Boy",
+      href: "https://SUBIR **",
+      dates: "Janeiro/2026 - Presente",
+      active: true,
+      description:
+        "Aplicação que tem como função realizar controle financeiro focado nas atividades de Moto Boy.",
+
+      technologies: [
+        "Dart",
+        "Java Script",
+        "Java",
+        "Figma"
+        
+        
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://SUBIR **",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/fonts/images/finance-motoboy-logo.png", 
       video: null,
     },
     

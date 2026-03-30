@@ -75,17 +75,9 @@ export default function Page() {
             <h2 className="text-xl font-bold">Graduações</h2>
           </BlurFade>
           <div className="flex flex-col gap-8">
-            {DATA.education.map((education, index) => (
-              <BlurFade
-                key={education.school}
-                delay={BLUR_FADE_DELAY * 8 + index * 0.05}
-              >
-                <Link
-                  href={education.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-x-3 justify-between group"
-                >
+            {DATA.education.map((education, index) => {
+              const content = (
+                <>
                   <div className="flex items-center gap-x-3 flex-1 min-w-0">
                     {education.logoUrl ? (
                       <img
@@ -109,9 +101,31 @@ export default function Page() {
                   <div className="text-xs text-muted-foreground">
                     {education.start} - {education.end}
                   </div>
-                </Link>
-              </BlurFade>
-            ))}
+                </>
+              );
+
+              return (
+                <BlurFade
+                  key={education.school}
+                  delay={BLUR_FADE_DELAY * 8 + index * 0.05}
+                >
+                  {education.href ? (
+                    <Link
+                      href={education.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-x-3 justify-between group"
+                    >
+                      {content}
+                    </Link>
+                  ) : (
+                    <div className="flex items-center gap-x-3 justify-between">
+                      {content}
+                    </div>
+                  )}
+                </BlurFade>
+              );
+            })}
           </div>
         </div>
       </section>
